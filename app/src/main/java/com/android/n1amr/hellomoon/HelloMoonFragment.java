@@ -17,6 +17,7 @@ public class HelloMoonFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setRetainInstance(true);
 
         mAudioPlayer = new AudioPlayer();
 
@@ -60,15 +61,15 @@ public class HelloMoonFragment extends Fragment {
         mAudioPlayer.stop();
     }
 
-    @Override
-    public void onPause() {
-        super.onPause();
-        mAudioPlayer.pause();
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
+//    @Override
+//    public void onPause() {
+//        super.onPause();
+//        mAudioPlayer.pause();
+//    }
+//
+//    @Override
+//    public void onResume() {
+//        super.onResume();
 //        mAudioPlayer.resume(getActivity());
-    }
+//    }
 }
