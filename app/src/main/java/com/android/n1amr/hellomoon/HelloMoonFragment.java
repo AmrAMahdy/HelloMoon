@@ -1,12 +1,8 @@
 package com.android.n1amr.hellomoon;
 
 import android.app.Fragment;
-import android.graphics.Color;
-import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.SurfaceView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -73,6 +69,6 @@ public class HelloMoonFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        mAudioPlayer.resume(getActivity());
+//        mAudioPlayer.resume(getActivity());
     }
 }
