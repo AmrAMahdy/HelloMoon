@@ -7,7 +7,7 @@ import android.media.MediaPlayer;
  * Created by N1amr on 2015/06/26.
  */
 public class AudioPlayer {
-    private MediaPlayer mMediaPlayer;
+    public MediaPlayer mMediaPlayer;
 
     public void stop() {
         if (mMediaPlayer != null) {
@@ -30,4 +30,19 @@ public class AudioPlayer {
 
         mMediaPlayer.start();
     }
+
+    public void pause() {
+        if (mMediaPlayer != null)
+            mMediaPlayer.pause();
+    }
+
+    public void resume(Context context) {
+        if (mMediaPlayer == null) {
+            play(context);
+        } else {
+            mMediaPlayer.start();
+        }
+    }
+
+
 }
