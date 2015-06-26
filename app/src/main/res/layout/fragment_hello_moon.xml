@@ -5,13 +5,13 @@
              tools:context="com.android.n1amr.hellomoon.HelloMoonActivity.HelloMoonFragment">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:contentDescription="@string/hellomoon_description"
-        android:scaleType="centerInside"
-        android:src="@mipmap/armstrong_on_moon"
-        />
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:contentDescription="@string/hellomoon_description"
+    android:scaleType="centerInside"
+    android:src="@mipmap/armstrong_on_moon"
+    />
 
     <TableRow
         android:layout_weight="0"
